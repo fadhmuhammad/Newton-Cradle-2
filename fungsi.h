@@ -3,9 +3,9 @@
 
 class fungsi {
 	public:
-		static double posisi(double, double, double);
-		static double kecepatan(double);
-		static double perioda(double);
+		static double posisi(double, double, double); //fungsi posisi
+		static double kecepatan(double); //fungsi kecepatan
+		static double perioda(double); //fungsi perioda
 };
 
 #endif

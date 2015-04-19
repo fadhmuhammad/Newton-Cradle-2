@@ -4,11 +4,11 @@
 
 class Grid{
 	public:
-		Grid();
-		bool checkNext(int);
-		void putBall(Ball*, int);
-		double findDistance();
-		void collide();
+		Grid(); //konstruktor
+		bool checkNext(int); //mengecek setelahnya
+		void putBall(Ball*, int); //meletakkan bola
+		double findDistance(); //mencari jarak antar dua bola
+		void collide(); //bertumbukan
 	
 	private:
 		Ball *ball[5];
