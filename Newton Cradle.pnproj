@@ -1,1 +1,1 @@
-<Project name="Newton Cradle"><File path="fungsi.h"></File><File path="main.cpp"></File><File path="fungsi.cpp"></File><File path="Ball.h.cpp"></File><File path="Ball.cpp"></File></Project>
+<Project name="Newton Cradle"><Folder name="header"><File path="Grid.h"></File><File path="fungsi.h"></File><File path="Ball.h.cpp"></File></Folder><Folder name="src"><File path="main.cpp"></File><File path="Grid.cpp"></File><File path="fungsi.cpp"></File><File path="Ball.cpp"></File></Folder></Project>
