@@ -26,12 +26,13 @@ double Grid::findDistance(){ //mencari jarak antar dua bola
 }
 
 void Grid::collide(){ //menjalankan simulasi ketika bertumbukan
-	double v;
 	if (ball[0]->isCollide == true){ // jika bertumbukan
 		if(ball[0]->v > 0.0) {	// jika kecepatan bola 0 di atas 0
-			v = ball[0]->v;	// maka menyimpan kecepatan bola 0 dalam v
+			vt = ball[0]->v;	// maka menyimpan kecepatan bola 0 dalam v
 			ball[0]->v = 0.0; // dan membuat kecepatan bola v = 0
-		} else if (ball[0]->v == 0) // jika kecepatan bola 0 adalah 0
-			ball[1]->v = v; //kecepatan bola 1 menjadi sebesar v yang merupakan kecepatan bola 0 sebelum berhenti
+		} else if (ball[0]->v == 0) { // jika kecepatan bola 0 adalah 0
+			ball[1]->v = vt; //kecepatan bola 1 menjadi sebesar v yang merupakan kecepatan bola 0 sebelum berhenti
+			ball[1]->amp = ball[0]->amp;
+		}
 	}
 }

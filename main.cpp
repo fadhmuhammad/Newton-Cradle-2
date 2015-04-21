@@ -27,7 +27,7 @@ int main() {
 	fout.open("Plot/data.txt");	//buka file
 	
 	double T = fungsi::perioda(Ball::L); //cari perioda
-	double Tamp = 0.78539;
+	double Tamp = 90 rad / (ball[0].v/L);
 	double t = Tamp; //dimulai dari waktu = 0
 	int n = 0; //counter
 	cout << T << "\t" << Tamp << endl;
@@ -35,10 +35,12 @@ int main() {
 		for (int i = 0; i < sumBall; i++){ //untuk bola i sampai bola sumBall atau 2
 			Ball::hasCollide(grid.findDistance()); //bertumbukankah? sambil menghitung jarak
 			cout << grid.findDistance() << "\t"; //mencetak jarak di konsol
+			//cout << t << "\t" << ball[i].v << "\t";
 			grid.collide(); //berjalan jika bertumbukan
 			ball[i].moving(t); //bergerak
-			fout << ball[i].posX << "\t" << -ball[i].posY <<"\t" << Ball::r << "\t"; //mencetak pada berkas
+			fout << ball[i].posX + ball[i].x0 << "\t" << -ball[i].posY <<"\t" << Ball::r << "\t"; //mencetak pada berkas
 		}
+		cout << endl;
 		fout << endl; //newline
 		t += 0.05; //menambah waktu
 		n++;

@@ -17,12 +17,12 @@ void Ball::hasCollide(double d){ //bertumbukankah?
 		isCollide = true; //maka bertumbukan
 	else //jika tidak
 		isCollide = false; //tidak bertumbukan
-	std::cout << isCollide << std::endl; //mencetak status di konsol
+	//std::cout << isCollide << std::endl; //mencetak status di konsol
 }
 
 double Ball::moving(double t){ //berberak
 		pos = posisi(amp,(v/L),t);
-		posX = L*sin(pos) + x0;
+		posX = L*sin(pos);
 		posY = L*cos(pos);
 		//posX = posX+(v*t); //posisi = posisi seblumnya + kecepatan d * waktu
 }
@@ -32,4 +32,3 @@ void Ball::setInit(double x, double amp_, double v_){ //menyetel nilai awal
 	v = v_;
 	amp = amp_;
 }
-	
