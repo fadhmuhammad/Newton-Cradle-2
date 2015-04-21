@@ -13,6 +13,7 @@ class Grid{
 	private:
 		Ball *ball[5];
 		bool order[5];
+		double vt;
 };
 
 #endif
