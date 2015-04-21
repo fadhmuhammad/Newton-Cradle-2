@@ -1,11 +1,11 @@
 set term png
 set style fill solid 1.0
-set xrange [-0.1:0.1]
+set xrange [-2:2]
 set xtics 0.001
 set xlabel "x axis"
 set ylabel "y axis"
-set yrange [-1:1]
-do for [i=0:44] {
+set yrange [-6:0]
+do for [i=0:89] {
 	filename = sprintf("plot-0%1.0f.png", i);
 	set output filename
 	plot \

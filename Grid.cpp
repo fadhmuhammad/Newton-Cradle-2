@@ -26,6 +26,7 @@ double Grid::findDistance(){ //mencari jarak antar dua bola
 }
 
 void Grid::collide(){ //menjalankan simulasi ketika bertumbukan
+	double v;
 	if (ball[0]->isCollide == true){ // jika bertumbukan
 		if(ball[0]->v > 0.0) {	// jika kecepatan bola 0 di atas 0
 			v = ball[0]->v;	// maka menyimpan kecepatan bola 0 dalam v
