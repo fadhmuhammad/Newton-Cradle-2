@@ -13,7 +13,7 @@ Ball::Ball(){ //konstruktor
 }
 
 void Ball::hasCollide(double d){ //bertumbukankah?
-	if (d <= 0.15) //jika jarak kurang dan sama dengan 0.020
+	if (d <= 0.4) //jika jarak kurang dan sama dengan 0.020
 		isCollide = true; //maka bertumbukan
 	else //jika tidak
 		isCollide = false; //tidak bertumbukan
