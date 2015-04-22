@@ -7,7 +7,7 @@ class Ball : public fungsi {
 	public:
 		Ball();
 		double moving(double);
-		static void hasCollide(double);
+		void hasCollide(double);
 		static double L;
 		static double m;
 		static double r;
@@ -17,7 +17,7 @@ class Ball : public fungsi {
 		double pos;
 		double amp;
 		double v;
-		static bool isCollide;
+		bool isCollide;
 		double x0;
 		
 };

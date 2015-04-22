@@ -8,7 +8,7 @@ class Grid{
 		bool checkNext(int); //mengecek setelahnya
 		void putBall(Ball*, int); //meletakkan bola
 		double findDistance(); //mencari jarak antar dua bola
-		void collide(); //bertumbukan
+		void collide(int); //bertumbukan
 	
 	private:
 		Ball *ball[5];

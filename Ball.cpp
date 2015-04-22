@@ -6,10 +6,9 @@
 double Ball::L = 0.0; //panjang tali
 double Ball::r = 0.0; //jari-jari
 double Ball::m = 0.0; //massa
-bool Ball::isCollide = false; //bertumbukan?
 
 Ball::Ball(){ //konstruktor
-
+//	isCollide = false;
 }
 
 void Ball::hasCollide(double d){ //bertumbukankah?

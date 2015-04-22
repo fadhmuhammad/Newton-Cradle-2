@@ -4,7 +4,7 @@ set xrange [-2:2]
 set xlabel "x axis"
 set ylabel "y axis"
 set yrange [-6:0]
-do for [i=0:89] {
+do for [i=0:105] {
 	filename = sprintf("Plot/plot-0%1.0f.png", i);
 	set output filename
 	plot \
