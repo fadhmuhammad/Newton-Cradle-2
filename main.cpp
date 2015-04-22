@@ -30,7 +30,7 @@ int main() {
 	double Tamp = 90 rad / (ball[0].v/Ball::L);
 	double t = Tamp; //dimulai dari waktu = 0
 	cout << T << "\t" << Tamp << endl;
-	while (t < T + 2 * Tamp){ //selama waktu kurang dari perioda
+	while (t < T + Tamp){ //selama waktu kurang dari perioda
 		for (int i = 0; i < sumBall; i++){ //untuk bola i sampai bola sumBall atau 2
 			ball[i].hasCollide(grid.findDistance()); //bertumbukankah? sambil menghitung jarak
 			//cout << grid.findDistance() << "\t"; //mencetak jarak di konsol
